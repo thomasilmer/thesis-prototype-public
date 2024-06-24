@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>GitHub Bot Insights</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap.min.css"
+        integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <main class="d-flex justify-content-center align-items-center" style="height: 100vh">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">GitHub Bot Insights</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Choose a repository&hellip;</h6>
+
+                    <form action="/" method="post">
+                        <div class="row g-2 mb-2">
+                            <div class="col-md">
+                                <label for="owner">
+                                    <input type="text" class="form-control" id="owner" name="owner" placeholder="owner" required>
+                                </label>
+                            </div>
+                            <div class="col-md-auto">
+                                <span class="fs-4">/</span>
+                            </div>
+                            <div class="col-md">
+                                <label for="repository">
+                                    <input type="text" class="form-control" id="repository" name="repo" placeholder="repository" required>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">
+                                Go
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

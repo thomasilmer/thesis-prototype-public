@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Statistics | GitHub Bot Insights</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap.min.css"
+        integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <div id="app" style="display: none;">
+        <insights-nav-bar current-item="index"></insights-nav-bar>
+
+        <main>
+            <div class="container-fluid">
+                <div class="row" v-if="isFakeRepository">
+                    <template v-if="repo === 'harmony'">
+                        <div class="col">
+                            <suggestion-card
+                                type="success"
+                                icon="fa-thumbs-up"
+                                title="Your bots seem to interact with a lot of contributions"
+                            >
+                                Your bots seem to interact with a significantly <strong>higher</strong> percentage of human contributions compared to other repositories.
+                            </suggestion-card>
+                        </div>
+                        <div class="col">
+                            <suggestion-card
+                                type="warning"
+                                icon="fa-exclamation-triangle"
+                                title="Bots with duplicate functionality"
+                                hint="Consider removing one of the bots from the repository if there is no specific reason for having both."
+                            >
+                                Your repository seems to have two
+                                <strong>issue and PR management</strong> bots with similar purposes. It could be that these bots interfere with each other.
+                            </suggestion-card>
+                        </div>
+                    </template>
+                    <template v-if="repo === 'viper'">
+                        <div class="col">
+                            <suggestion-card
+                                type="info"
+                                icon="fa-robot"
+                                title="A new bot has arrived!"
+                                hint="If this bot was not configured by you, then consider checking what they have been up to."
+                            >
+                                The bot <span class="bot-name">stale[bot]</span> has been seen interacting with your repository for the first time 40 days ago.
+                                According to our database, it is a bot for <strong>issue and PR management</strong>.
+                            </suggestion-card>
+                        </div>
+                        <div class="col">
+                            <suggestion-card
+                                type="warning"
+                                icon="fa-exclamation-triangle"
+                                title="A bot showed irregular behavior"
+                                hint="Consider checking if the bot malfunctioned around that time. It may have disrupted the contributions to your repository."
+                            >
+                                Around <strong>40 days ago</strong> the bot <span class="bot-name">stale[bot]</span> performed far more actions than it normally would.
+                            </suggestion-card>
+                        </div>
+                    </template>
+                    <template v-if="repo === 'koalas'">
+                        <div class="col">
+                            <suggestion-card
+                                type="warning"
+                                icon="fa-exclamation-triangle"
+                                title="Pull requests submitted by your bots are rejected often"
+                            >
+                                Your repository seems to have a significantly
+                                <strong>lower</strong> percentage of merged pull requests submitted by bots compared to other repositories.
+                            </suggestion-card>
+                        </div>
+                        <div class="col">
+                            <suggestion-card
+                                type="danger"
+                                icon="fa-exclamation-triangle"
+                                title="Frequent bot configuration changes"
+                                hint="Starting a discussion about what the configuration should be with the involved collaborators could help lower the frequency of configuration changes."
+                            >
+                                Bot configuration for <span class="bot-name">dependabot[bot]</span> has been changed <em>5</em> times by <em>3</em> different contributors in a short time span.
+                            </suggestion-card>
+                        </div>
+                    </template>
+                </div>
+
+                <h2 class="text-light">
+                    Summary for bots in <em style="color: #d63384;">{{ owner }}/{{ repo }}</em> in the past 14 days
+                </h2>
+
+                <bot-summary></bot-summary>
+
+                <h2 class="text-light">
+                    Bot activity
+                    <br>
+                    <small class="text-secondary" style="font-size: 1rem;">
+                        An overview of general bot activity
+                    </small>
+                </h2>
+
+                <div class="row">
+                    <div class="col-lg-6 col-xl-4">
+                        <active-bots></active-bots>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <chart-active-bots></chart-active-bots>
+                    </div>
+                    <div class="col-xl-4">
+                        <chart-bot-actions></chart-bot-actions>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <chart-issues></chart-issues>
+                    </div>
+                    <div class="col-xl-6">
+                        <chart-pull-requests></chart-pull-requests>
+                    </div>
+                </div>
+
+                <div class="row" v-if="owner === 'thomasilmer'">
+                    <div class="col-xl-6">
+                        <chart-issues-closed></chart-issues-closed>
+                    </div>
+                    <div class="col-xl-6">
+                        <chart-pull-requests-closed></chart-pull-requests-closed>
+                    </div>
+                </div>
+
+                <h2 class="text-light">
+                    Bots vs Humans
+                    <br>
+                    <small class="text-secondary" style="font-size: 1rem;">
+                        An overview of work done by bots compared to humans
+                    </small>
+                </h2>
+
+                <div class="row">
+                    <div class="col-xl-4">
+                        <chart-bots-humans-issues></chart-bots-humans-issues>
+                    </div>
+                    <div class="col-xl-4">
+                        <chart-bots-humans-pull-requests></chart-bots-humans-pull-requests>
+                    </div>
+                    <div class="col-xl-4">
+                        <chart-bots-humans-pull-requests-merged></chart-bots-humans-pull-requests-merged>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-4">
+                        <chart-bots-humans-issue-comments></chart-bots-humans-issue-comments>
+                    </div>
+                    <div class="col-xl-4">
+                        <chart-bots-humans-pull-request-comments></chart-bots-humans-pull-request-comments>
+                    </div>
+                    <div class="col-xl-4">
+                        <chart-bots-humans-commits></chart-bots-humans-commits>
+                    </div>
+                </div>
+
+                <h2 class="text-light">
+                    Bots <i class="fa-regular fa-heart fa-2xs"></i> Humans
+                    <br>
+                    <small class="text-secondary" style="font-size: 1rem;">
+                        An overview of bots interacting with human contributions
+                    </small>
+                </h2>
+
+                <div class="row">
+                    <div class="col-xl-6">
+                        <chart-issue-interaction></chart-issue-interaction>
+                    </div>
+                    <div class="col-xl-6">
+                        <chart-pull-request-interaction></chart-pull-request-interaction>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <insights-footer></insights-footer>
+    </div>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/js/bootstrap.bundle.min.js"
+        integrity="sha512-BOsvKbLb0dB1IVplOL9ptU1EYA+LuCKEluZWRUYG73hxqNBU85JBIBhPGwhQl7O633KtkjMv8lvxZcWP+N3V3w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.2/axios.min.js"
+        integrity="sha512-bHeT+z+n8rh9CKrSrbyfbINxu7gsBmSHlDCb3gUF1BjmjDzKhoKspyB71k0CIRBSjE5IVQiMMVBgCWjF60qsvA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+        integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/2.0.1/chartjs-plugin-annotation.min.js"
+        integrity="sha512-LZEOcU8s74hwWva82MJux7GgFNjfeExXG9yZPQrKz567Od4O2D/6UX3oGoZiRDOdbMtH33NBq7vonH4VOUPA/Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>

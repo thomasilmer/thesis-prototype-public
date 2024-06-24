@@ -1,0 +1,33 @@
+{
+    "name": "github-bot-insights",
+    "private": true,
+    "version": "0.1.0",
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "author": "Thomas Ilmer",
+    "type": "module",
+    "dependencies": {
+        "@octokit/rest": "^19.0.4",
+        "csv": "^6.3.3",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "sequelize": "^6.25.4",
+        "sqlite3": "^5.1.2",
+        "tiny-async-pool": "^2.1.0"
+    },
+    "devDependencies": {
+        "laravel-mix": "^6.0.6",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.54.3",
+        "sass-loader": "^12.6.0",
+        "vue": "^3.2.41",
+        "vue-loader": "^16.8.3"
+    }
+}

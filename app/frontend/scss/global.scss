@@ -1,0 +1,37 @@
+body {
+    background-color: #333333;
+}
+
+main {
+    padding-top: 24px;
+}
+
+nav + main {
+    margin-top: 56px;
+}
+
+main h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.bot-name {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.875em;
+    color: #d63384;
+}
+
+.text-github-pr-open,
+.text-github-issue-open {
+    color: rgb(63, 185, 80);
+}
+
+.text-github-pr-closed,
+.text-github-issue-closed {
+    color: rgb(192, 68, 63);
+}
+
+.text-github-pr-merged,
+.text-github-issue-completed {
+    color: rgb(163, 113, 247);
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Downloading&hellip; | GitHub Bot Insights</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.2/css/bootstrap.min.css"
+        integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body class="bg-dark">
+    <div class="container">
+        <main class="d-flex justify-content-center align-items-center text-light" style="height: 100vh">
+            <div class="text-center" id="content">
+                <i class="fa-solid fa-circle-notch fa-spin fa-2xl"></i>
+                <br>
+                <br>
+                <strong>(Re)populating the database for this repository. This may take a minute&hellip;</strong>
+                <br>
+                <small>You will automatically be redirected once the download finishes.</small>
+            </div>
+        </main>
+    </div>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"
+        integrity="sha256-/7bicKe7seobeXllroXjV2Czi5h0RHikFR3e55ox0hU="
+        crossorigin="anonymous"
+    ></script>
+
+    <script>
+        (() => {
+            const interval = 1000;
+            let shouldContinue = true;
+
+            function recursivelyCheckStatus() {
+                const segments = window.location.pathname.split('/');
+                const owner = segments[1];
+                const repo = segments[2];
+
+                axios.post('/api/repository/repopulation-status', {
+                    owner: owner,
+                    repo: repo,
+                }).then((response) => {
+                    if (response.data.status === null) {
+                        window.location.reload();
+                    } else if (response.data.status === 'completed') {
+                        window.location.reload();
+                    } else if (response.data.status === 'canceled') {
+                        document.querySelector('#content').innerHTML = `
+                            <i class="fa-solid fa-exclamation-triangle fa-2xl"></i>
+                            <br>
+                            <br>
+                            <strong>An unexpected error occurred while fetching data.</strong>
+                            <br>
+                            <small>Please <a href="">try again</a> later.</small>
+                        `;
+
+                        shouldContinue = false;
+                    } else if (response.data.status === 'stalled') {
+                        document.querySelector('#content').innerHTML = `
+                            <i class="fa-solid fa-exclamation-triangle fa-2xl"></i>
+                            <br>
+                            <br>
+                            <strong>The hourly rate limit on my GitHub API token as been reached.</strong>
+                            <br>
+                            <small>Please <a href="">try again</a> in an hour.</small>
+                        `;
+
+                        shouldContinue = false;
+                    }
+                }).catch((response) => {
+
+                }).finally(() => {
+                    if (shouldContinue) {
+                        setTimeout(recursivelyCheckStatus, interval);
+                    }
+                });
+            }
+
+            setTimeout(recursivelyCheckStatus, interval);
+        })();
+    </script>
+</body>
+</html>

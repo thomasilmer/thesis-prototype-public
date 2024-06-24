@@ -1,0 +1,199 @@
+Account,Availability,GitHub Apps,GitHub Accounts,GitHub Actions,Functionality Notes,CI Task Assistance,Code Review Assistance,Community Management,Dependency and Security Check,Documentation,Issue and PR Management,Open Source,Bot Creation Framework,Website/Info
+['akka-ci'],Commercial,True,True,False,Running checks in PR,True,False,False,False,False,False,True,,https://akka.io/
+['depfu'],Commercial,True,False,False,Dependency Updates,False,False,False,True,False,False,False,,https://github.com/marketplace/depfu
+['allcontributors'],Free,True,False,False,Acknowledge Contributors,False,False,True,False,False,False,True,,https://github.com/all-contributors/all-contributors
+['amp-owners-bot'],Free,True,False,False,Approve PR when passes all checks,True,False,False,False,False,False,True,,https://github.com/ampproject/amp-github-apps
+"['ansibot', 'ant-design-bot']",Free,True,False,False,"manage ansible issues, close, open",False,False,False,False,False,True,True,,https://github.com/ansible/ansibullbot
+['atlassian-cla-bot'],Free,False,True,False,Contributor License Agreement,False,False,True,False,False,False,True,CLA Bot,"https://github.com/apps/atlassian-cla-bot https://github.com/finos/cla-bot"
+['auto-comment'],Free,True,False,True,automatically provide comment based on event,False,False,True,False,False,False,True,ProBot,https://github.com/apps/auto-comment
+['babel-bot'],Free,True,False,False,Labeling issues based on the content,False,False,False,False,False,True,True,AWS Lambda,https://github.com/babel/babel-bot
+['Boring-Cyborg'],Free,True,False,True,Label issue based on source code changes,False,False,False,False,False,True,True,ProBot,https://probot.github.io/apps/boring-cyborg/
+"['BrewTestBot', 'SeekerTestBot']",Free,True,False,False,Run tests on PR and report results,True,False,False,False,False,False,True,,https://github.com/Homebrew/homebrew-test-bot
+['buildbot'],Free,False,True,False,"generic repo bot CI framework build test and deploy",True,False,False,False,False,False,True,buildbot,https://www.buildbot.net/
+['carsonbot'],Free,False,True,False,"label issue based on comments,  recommend reviewer, format pr, add milestone",False,True,False,False,True,True,True,,https://github.com/symfony-tools/carsonbot
+['changeset-bot'],Free,True,False,False,Preview changes in a PR,False,True,False,False,False,False,True,,https://github.com/apps/changeset-bot
+['cla-checker-service'],Free,False,True,False,Contributor License Agreement,False,False,True,False,False,False,False,,https://github.com/apps/cla-checker-service
+['CLAassistant'],Free,True,False,False,['Contributor License Agreement'],False,False,True,False,False,False,True,,https://github.com/cla-assistant/cla-assistant
+['close-issue-app'],Free,False,True,True,['close inactive issues'],False,False,False,False,False,True,True,,https://github.com/apps/close-issue-app
+['CocoaPodsBarista'],Free,True,False,False,Automate checks on pull-requests and label issue/pr with check status,True,False,False,False,False,True,True,Danger,https://github.com/danger/danger
+['codesandbox'],Free,True,False,False,Build and run test checks on PR,True,False,False,False,False,False,False,,https://github.com/apps/codesandbox
+['codetriage-readme-bot'],Free,False,True,False,Manage PR that are related to READMEs,True,False,False,False,False,True,False,,https://github.com/codetriage-readme-bot
+['copybara-service'],Free,True,True,False,"pushing changes, testing and deploying web application auto merge passed PR",True,False,False,False,False,False,True,,"http://teamcapybara.github.io/capybara/ https://github.com/apps/copybara-service"
+['delete-merged-branch'],Free,True,False,True,Automatically deletes a branch after it's merged.,True,False,False,False,False,False,True,,https://github.com/apps/delete-merged-branch
+['devdocs-bot'],Free,True,False,False,Update documentation,False,False,False,False,True,False,True,,https://github.com/devdocs-bot
+['diem-cla-bot'],Free,False,False,False,Contributor License Agreement,False,False,True,False,False,False,True,,https://github.com/ColinEberhardt/cla-bot
+['dpulls'],Free,True,False,False,checking status of depending pull requests of a pull request,False,False,False,True,False,False,False,,"https://www.dpulls.com/ https://github.com/marketplace/dpulls"
+['echarts-bot'],Free,False,True,False,Issue & PR Management,False,False,False,False,False,True,True,,https://github.com/apache/echarts-bot
+['ecma262-compare-bot'],Free,False,True,False,Code diff result report,False,True,False,False,False,False,False,,https://github.com/ecma262-compare-bot
+['faily-bot'],Free,False,True,False,comment on PR when the CI fails.,True,False,False,False,False,False,True,,https://github.com/morrisjobke/faily
+"['forking-renovate', 'renovate-bot', 'renovate', 'renovate-approve', 'renovate-approve-2']",Free,True,False,False,Dependency Updates,False,False,False,True,False,False,True,,https://github.com/renovatebot/renovate
+['gcf-merge-on-green'],Free,True,False,False,Merge a pull-request when all required checks have passed,True,False,False,False,False,False,True,ProBot,https://github.com/googleapis/repo-automation-bots
+['gitguardian'],Free,False,False,True,Check security,False,False,False,True,False,False,False,,"https://github.com/marketplace/actions/gitguardian-shield-action https://github.com/GitGuardian/ggshield"
+"['hashicorp-ci', 'hashibot']",Free,True,False,False,"Generic CI bot, including update dependencies, run checks, and post comments",True,False,False,True,False,False,False,,https://github.com/hashicorp-ci
+['hashicorp-cla'],Free,True,False,False,Contributor License Agreement,False,False,True,False,False,False,False,,https://github.com/hashicorp-cla
+['hasura-bot'],Free,False,True,False,commenting on pull requests when they are opened/closed/merged,False,False,True,False,False,False,True,,https://github.com/hasura/github-bot
+['issue-check'],Free,False,True,False,Check if issue follows the template,False,False,False,False,False,True,True,ProBot,https://github.com/apps/issue-check
+['jekyllbot'],Free,False,True,False,auto-reply on certain events,False,False,True,False,False,False,True,,https://github.com/parkr/auto-reply
+['jsf-clabot'],Free,True,False,False,Contributor License Agreement,False,False,True,False,False,False,True,CLAassistant,https://github.com/jsf-clabot
+['k8s-ci-robot'],Free,True,False,False,"Command taker, comment interface with Github API, general CI purpose",True,False,False,False,False,False,True,,"https://github.com/kubernetes/test-infra/tree/master/prow#bots-home https://prow.k8s.io/command-help"
+['label-actions'],Free,False,True,False,Issue & PR Management,False,False,False,False,False,True,True,,https://github.com/dessant/label-actions
+['lgtm-com'],Free,True,False,False,Security and conflict check for PR,True,False,False,True,False,False,True,,https://lgtm.com/
+['linux-foundation-easycla'],Free,False,True,False,Contributor License Agreement,False,False,True,False,False,False,True,,https://github.com/communitybridge/easycla
+['lock'],Free,True,False,False,['lock inactive issue/discussion'],False,False,False,False,False,True,True,ProBot,https://github.com/apps/lock
+['mary-poppins'],Free,True,False,False,Issue & PR Management,False,False,False,False,False,True,True,,https://github.com/btford/mary-poppins
+['meeseeksdev'],Free,True,False,False,"generic repo bot responds to commands, backport Pull-Request, give fine grained permissions to users",True,False,True,True,False,False,False,,https://github.com/apps/meeseeksdev/
+['MIRAI-bot'],Free,False,False,True,Community Interaction,False,False,True,False,False,False,True,Eris,https://github.com/brussell98/Mirai
+['misspell_fixer'],Free,False,False,True,Automatically fixes typos and mistakes in source code and docs,False,True,False,False,True,False,True,,https://github.com/marketplace/actions/misspell-fixer-action
+['netlify'],Free,True,True,False,"Continuous Intergration Enhancement Deployment",True,False,False,False,False,False,True,,https://github.com/apps/netlify
+['nextcloud-stale'],Free,False,True,False,Issue & PR Management,False,False,False,False,False,True,False,,https://github.com/apps/nextcloud-stale
+['no-response'],Free,False,True,False,close and label issue has no-response,False,False,False,False,False,True,True,ProBot,https://github.com/probot/no-response
+['paddle-bot'],Free,False,True,False,"Discord welcome Issue & PR Management",False,False,True,False,False,True,True,,https://github.com/apps/paddle-bot
+['probot-autolabeler'],Free,True,False,False,Issue label,False,False,False,False,False,True,True,ProBot,https://github.com/apps/probot-autolabeler
+['project-bot'],Free,True,False,False,add issue label,False,False,False,False,False,True,True,,"https://github.com/apps/project-bot https://github.com/philschatz/project-bot"
+['pull-dog'],Free,False,True,False,"Continuous Intergration Enhancement Setting up testing envrionment for the deployment",True,False,False,False,False,False,False,,https://github.com/apps/pull-dog
+['pull-request-size'],Free,True,False,False,Summarize PR based on diff size,False,True,False,False,False,False,True,,"https://github.com/apps/pull-request-size https://github.com/noqcks/pull-request-size"
+['realm-probot'],Free,False,True,False,"A bot that takes care of automating tasks based on events happening on Github and Zenhub, generic repo bot",False,False,False,False,False,False,False,ProBot,https://github.com/apps/realm-probot
+['release-drafter'],Free,True,False,False,draft a release note with template,False,False,False,False,True,False,True,ProBot,"https://github.com/apps/release-drafter https://github.com/release-drafter/release-drafter"
+['repo-ranger'],Free,True,False,False,"close issues, merge pull-request passes checks, and make comments on certain events",True,False,True,False,False,True,True,,https://github.com/reporanger
+['request-info'],Free,True,False,False,Ask more information of a PR or Issue if it has not presented.,False,False,False,False,False,True,True,ProBot,https://github.com/apps/request-info
+['rfcbot'],Free,False,True,False,coordinating between team members on PR review,False,True,False,False,False,False,True,,"https://github.com/rust-lang/rfcbot-rs https://githubmemory.com/@rfcbot"
+['scala-steward'],Free,True,False,False,Dependency Updates,False,False,False,True,False,False,True,,https://github.com/scala-steward-org/scala-steward
+['selenium-assistant'],Free,False,True,False,Archived,False,False,False,False,False,False,True,ProBot,"https://github.com/apps/selenium-assistant https://githubmemory.com/repo/SeleniumHQ/selenium-assistant https://github.com/SeleniumHQ/selenium-assistant"
+['sourcery-ai'],Free,True,False,False,"refactoring code, improve code style, visualize PR changes",False,True,False,False,False,False,True,,https://github.com/marketplace/sourcery-ai
+['squash-labs'],Free,False,True,False,test web apps. Create a virtual machine for each branch of code and automatically makes your app available from a unique URL.,True,False,False,False,False,False,False,,https://github.com/apps/squash-labs
+['Stale'],Free,True,True,False,Label and close inactive issues,False,False,False,False,False,True,True,ProBot,https://github.com/probot/stale
+['support'],Free,False,True,False,A GitHub App that comments on and closes issues labeled as support requests.,False,False,False,False,False,True,True,ProBot,https://github.com/apps/support
+['sync-by-unito'],Free,True,False,False,Automate the generic workflow of CI,True,False,False,False,False,False,False,,https://github.com/apps/sync-by-unito
+['TravisBuddy'],Free,False,True,False,"Continuous Intergration Enchancement generic repo bot for CI automate build, test, and deploy",True,False,False,False,False,False,True,,https://github.com/bluzi/travis-buddy
+['weekly-digest'],Free,True,False,False,Activity Summary,False,False,False,False,True,False,True,ProBot,https://github.com/apps/weekly-digest
+['welcome'],Free,False,True,False,Discord welcome,False,False,True,False,False,False,True,ProBot,https://github.com/InfusionBot/Welcome-Bot
+['yii-bot'],Free,False,True,False,"Label issue, move issues to another repo",False,False,False,False,False,False,True,,https://github.com/yiisoft-contrib/github-bot
+['zulipbot'],Free,False,True,False,"issue triage (self-assigning and labeling issues), monitors the activity of issues and pull requests, notifying contributors about new merge conflicts, continuous integration build results",True,False,False,False,False,True,True,,"https://github.com/zulip/zulipbot https://githubmemory.com/@zulipbot"
+['issue-label-bot'],Free,True,False,False,Label issues,False,False,False,False,False,True,True,,https://github.com/marketplace/issue-label-bot
+"['AppVeyor', 'AppVeyorBot']",Free and Commercial,False,True,False,"building, testing and Deployment",True,False,False,False,False,False,True,,https://github.com/marketplace/appveyor
+['Azure-pipelines'],Free and Commercial,True,False,False,"build, test and deploy",True,False,False,False,False,False,True,,https://github.com/marketplace/azure-pipelines
+['cloudflare-pages'],Free and Commercial,True,False,False,prview web application changes,True,False,False,False,False,False,False,,"https://github.com/apps/cloudflare-pages https://pages.cloudflare.com/"
+"['codecov', 'codecov-io', 'codecov-commenter']",Free and Commercial,True,False,True,Testing coverage,False,True,False,False,False,False,True,,https://about.codecov.io/
+['codelingobot'],Free and Commercial,True,False,False,"knowledge management, sharing notes on code snippet",False,False,False,False,True,False,False,,https://github.com/apps/codelingo
+['coveralls'],Free and Commercial,False,True,False,Testing coverage,False,True,False,False,False,False,False,,https://coveralls.io/
+['deepsource-autofix'],Free and Commercial,True,False,False,Autofix issues and create pull requests,True,False,False,False,False,False,False,,"https://deepsource.io/ https://github.com/apps/deepsource-autofix"
+['gitpod-io'],Free and Commercial,False,True,False,Deploy software environment on different settings for CI,True,False,False,False,False,False,False,,https://github.com/marketplace/gitpod-io
+['LingoHub'],Free and Commercial,False,True,False,Localization and translation,False,False,False,False,True,False,False,,https://github.com/apps/lingohub
+['mergify'],Free and Commercial,False,True,False,Check pull-request if passes all tests,True,False,False,False,False,False,False,,https://github.com/marketplace/mergify
+['pullapprove'],Free and Commercial,True,False,False,Code Review Assignment,False,True,False,False,False,False,False,,https://www.pullapprove.com/
+['pyup-bot'],Free and Commercial,False,True,False,Dependency Updates,False,False,False,True,False,False,False,,https://pyup.io/
+['restyled-io'],Free and Commercial,False,True,False,"Check codestyle in PR, and left comments on the PR",False,True,False,False,False,False,False,,https://github.com/apps/restyled-io
+['review-notebook-app'],Free and Commercial,False,True,False,visualize diff for review,False,True,False,False,False,False,False,,https://github.com/apps/review-notebook-app
+['snyk-bot'],Free and Commercial,False,True,True,Dependency Updates,False,False,False,True,False,False,False,,https://snyk.io/
+['SonarCloud'],Free and Commercial,True,False,False,"Security check and updates; automate build, test and checks",True,False,False,True,False,False,False,,https://sonarcloud.io/
+['sonatype-lift'],Free and Commercial,True,False,False,Summarize diffs in PR and perform static analysis,False,True,False,False,False,False,False,,https://github.com/marketplace/muse-dev
+['sourcelevel-bot'],Free and Commercial,True,False,False,Auto code review with static analysis,False,True,False,False,False,False,False,,https://github.com/apps/sourcelevel-bot
+['Travis-ci'],Free and Commercial,True,False,False,"Automating build, test and deploy",False,True,False,False,False,False,False,,https://www.travis-ci.com/
+['vercel'],Free and Commercial,True,False,False,Deploy changes for a push.,True,False,False,False,False,False,True,,https://vercel.com/docs/concepts/git/vercel-for-github
+['viezly'],Free and Commercial,True,False,False,visualize changes of PR,False,True,False,False,False,False,False,,"https://viezly.com/ https://github.com/apps/viezly"
+['whitesource-for-github-com'],Free and Commercial,True,False,False,update dependencies,False,False,False,True,False,False,False,,https://github.com/apps/whitesource-for-github-com
+['msftbot'],Private,True,False,False,"issue label/unlabel, auto merge passed PR, merge timer, small conversation",True,False,True,False,False,True,True,WindowsCommunityToolkit,"https://github.com/apps/msftbot https://github.com/CommunityToolkit/WindowsCommunityToolkit"
+"['bors-libra', 'bors', 'bors-servo']",Free and Private,False,True,True,"Continuous Intergration Enhancement, Issue & PR Management, Auto commit, build test and deploy",True,False,False,False,False,True,False,,https://github.com/bors-libra
+['AmplabJenkins'],Private,False,True,False,build test for PR,True,False,False,False,False,False,False,,https://githubmemory.com/@AmplabJenkins
+['analysis-bot'],Private,False,True,False,build PR for various deployment environment,True,False,False,False,False,False,False,,https://githubmemory.com/@analysis-bot
+['angular-automatic-lock-bot'],Private,True,False,False,automatically lock issues that are inactive,False,False,False,False,False,True,False,,https://github.com/apps/angular-automatic-lock-bot
+['apmmachine'],Private,False,True,False,"Issue & PR Management Continuous Intergration Enchancement push commits generic CI bot",True,False,False,False,False,True,False,,https://githubmemory.com/@apmmachine
+['apollo-cla'],Private,True,False,False,Contributor License Agreement,False,False,True,False,False,False,False,,https://github.com/apollo-cla
+['athenabot'],Private,False,True,False,Discord welcome,False,False,True,False,False,False,False,,https://github.com/athenabot
+['backportbot-nextcloud'],Private,True,False,False,Private; backport pr maybe.,False,False,False,False,False,False,False,,https://github.com/apps/backportbot-nextcloud
+"['blathers-crl', 'cockroach-teamcity']",Private,True,False,False,"Acknowledge Contributors Issue & PR Management, generic bots",False,False,True,False,False,True,True,,"https://github.com/apps/blathers-crl https://github.com/cockroachdb/cockroach"
+['bot-gradle'],Private,False,True,False,"generic CI bot push changes, issue changes, pull-request dependencies update",True,False,False,True,False,True,False,,https://githubmemory.com/@bot-gradle
+['capistrano-bot'],Private,False,True,False,PR comments and run test and report,True,True,False,False,False,False,False,,https://githubmemory.com/@capistrano-bot
+['cdr-oss'],Private,False,True,False,Generic CI bot,True,False,False,False,False,False,False,,https://github.com/cdr-oss
+['coffeescriptbot'],Private,False,True,False,Generic CI bot,True,False,False,False,False,False,False,,https://github.com/coffeescriptbot
+['container-tools-bot'],Private,False,True,False,preview documentation changes in PR,False,True,False,False,False,False,False,,https://githubmemory.com/@container-tools-bot
+['craterbot'],Private,False,True,False,Build and run test checks on PR,True,False,False,False,False,False,False,,https://githubmemory.com/@craterbot
+"['dependabot', 'dependabot-preview']",Private,True,False,False,Dependency Updates,False,False,False,True,False,False,True,,https://github.com/dependabot/dependabot-core
+['dnfadmin'],Private,True,False,False,"Contributor License Agreement and generic repo bot",True,False,True,False,False,False,False,,https://github.com/dnfadmin
+['dnfclas'],Private,False,True,False,Contributor lisence Agreement,False,False,True,False,False,False,False,,https://github.com/dnfclas
+['docker-desktop-robot'],Private,False,True,False,"Issue & PR Management format issue/bug report, request more information",False,False,False,False,True,True,False,,https://githubmemory.com/@docker-desktop-robot
+['docusaurus-bot'],Private,False,True,False,Documentation,False,False,False,False,True,False,False,,https://github.com/docusaurus-bot
+['dotnet-issue-labeler'],Private,True,False,False,label issue,False,False,False,False,False,True,False,,https://github.com/Dotnet-GitSync-Bot
+"['dotnet-maestro-bot', 'dotnet-maestro']",Private,True,False,False,"auto push commits, assign reviews, detecting unmerged changes",True,True,False,False,False,False,False,,https://github.com/dotnet-maestro-bot
+['DrahtBot'],Private,True,False,False,"Label issues, and running tests",True,False,False,False,False,True,False,,https://github.com/DrahtBot
+['eslintbot'],Private,False,True,False,"generic repo bot push commits, tag branches, release",True,False,False,False,True,False,False,,https://githubmemory.com/@eslintbot
+['explosion-bot'],Private,False,True,False,"tag branches, publish releases",True,False,False,False,True,False,False,,https://github.com/explosion-bot
+['facebook-github-bot'],Private,False,True,False,"Contributor Lisence Agreement push commits diff change of PR",True,True,True,False,False,False,False,,https://github.com/facebook-github-bot
+['fastlane-bot'],Private,False,True,False,"request issue template/checklist, auto close inactive issues",False,False,False,False,False,True,False,,https://github.com/fastlane-bot
+['fejta-bot'],Private,False,True,False,Issue & PR Management,False,False,False,False,False,True,False,,https://github.com/fejta-bot
+['fw-bot'],Private,False,True,False,"Continuous Intergration Enhancement Contributor Licence Agreement",True,False,True,False,False,False,False,,https://githubmemory.com/index.php/@fw-bot
+"['gatsbybot', 'gatsby-cloud', 'gatsby-cloud-staging']",Private,False,True,False,"Update dependencies Managing mirrors and other branches Generic CI bot",True,False,False,True,False,False,False,,https://github.com/gatsbybot
+['gitter-badger'],Private,False,True,False,"Automatically create pull requests, fork, and manage branches",True,False,False,False,False,False,False,,https://githubmemory.com/@gitter-badger
+['golangcibot'],Private,False,True,False,"Automate CI workflow, generic repo bot",True,False,False,False,False,False,False,,https://githubmemory.com/@golangcibot
+['golint-fixer'],Private,False,True,False,Create backport PR,False,False,False,True,False,False,False,,https://github.com/golint-fixer
+['gollum-bot'],Private,False,True,False,generic repo bot,True,False,False,False,False,False,False,,https://githubmemory.com/@gollum-bot
+"['googlebot', 'google-oss-bot', 'google-ml-butler', 'google-cla']",Private,True,True,False,"Contributor License Agreement and label issue and prs issue assign, collect feedback",False,True,True,False,False,True,True,,"https://developers.google.com/open-source/github/accounts#googlebot https://github.com/apps/google-cla"
+['graalvmbot'],Private,False,True,False,"Continuous Intergration Enchancement generic CI bot Push code, collect contributor lisence agreement create branches for versions",True,False,True,False,False,False,False,,https://github.com/graalvmbot
+['h5bp-bot'],Private,False,True,False,generic repo bot,True,False,False,False,False,False,False,,https://github.com/h5bp-bot
+['highfive'],Private,False,True,False,"greeting first contributor, add/remove labels on PR/issues, PR summary, warning unsafe changes, mention core reviewers",False,True,True,True,False,True,False,,https://githubmemory.com/@highfive
+['istio-policy-bot'],Private,False,True,False,Label issues based on repo policy,False,False,False,False,False,True,False,,https://githubmemory.com/@istio-policy-bot
+['istio-testing'],Private,False,True,False,"Testing coverage Deployment",True,True,False,False,False,False,False,,https://githubmemory.com/@istio-testing
+['jade-bot'],Private,False,True,False,generic repo bot,True,False,False,False,False,False,False,,https://github.com/jade-bot
+['jellyfish-bot'],Private,False,True,False,"generic repo bot, create issues based on contributor requests",True,False,False,False,False,True,False,,https://github.com/jellyfish-bot
+['jitsi-jenkins'],Private,False,True,False,"push and commit changes; create release note, generic repo bot",True,False,False,False,True,False,False,,https://githubmemory.com/@jitsi-jenkins
+['karmarunnerbot'],Private,False,True,False,release notes,False,False,False,False,True,False,False,,https://githubmemory.com/@karmarunnerbot
+['kibanamachine'],Private,False,True,False,"Continuous Intergration Enchancement generic repo bot issue failing test, backport pull request, CI automation",True,False,False,True,False,True,False,,https://github.com/kibanamachine
+['libra-action'],Private,False,True,False,"dependencies check, and variable naming check",False,True,False,True,False,False,False,,https://githubmemory.com/@libra-action
+['lightbend-cla-validator'],Private,True,False,False,Contributor License Agreement,False,False,True,False,False,False,False,,https://www.lightbend.com/
+['LottieSnapshotBot'],Private,False,True,False,comment the diff of the PR,False,True,False,False,False,False,False,,https://githubmemory.com/@LottieSnapshotBot
+['matticbot'],Private,False,True,False,performance anaylsis of PR,False,True,False,False,False,False,False,performance advisor bot,https://github.com/matticbot
+['mention-bot'],Private,True,False,False,private app,False,False,True,False,False,False,False,,https://github.com/apps/mention-bot
+"['msftbot', 'msftcla', 'microsoft-cla', 'MicrosoftIssueBot']",Private,True,False,False,"Automatically create issue based on requests Contributor License Agreement issue label/unlabel, auto merge passed PR, merge timer, small conversation",True,False,True,False,False,True,False,,"https://github.com/microsoft/calculator/issues/1562 https://github.com/CommunityToolkit/WindowsCommunityToolkit https://github.com/apps/msftbot"
+['minikube-pr-bot'],Private,False,True,False,"issue comments, report failed tests",True,True,False,False,False,True,False,,https://githubmemory.com/index.php/@minikube-pr-bot
+['minio-trusted'],Private,False,True,False,"run tests and report results for the PR, update dependencies and configurations",True,True,False,True,False,False,False,,https://githubmemory.com/index.php/@minio-trusted
+['mm-cloud-bot'],Private,False,True,False,"summarize issues, create test server",True,False,False,False,False,True,False,,https://githubmemory.com/@mm-cloud-bot
+['mui-pr-bot'],Private,False,True,False,renovate behind,False,False,False,True,False,False,False,,https://githubmemory.com/index.php/@mui-pr-bot
+['mxnet-bot'],Private,False,True,False,Issue & PR Management,False,False,False,False,False,True,False,,https://githubmemory.com/@mxnet-bot
+['nanoslider'],Private,False,True,False,"automate CI workflow, generic CI bot",True,False,False,False,False,False,True,,https://github.com/JuliaCI/Nanosoldier.jl
+['netdata-community-bot'],Private,False,True,False,mirror issues and link PRs from other channels,False,False,False,False,False,True,False,,https://githubmemory.com/@netdata-community-bot
+['nextcloud-pr-bot'],Private,False,True,False,insufficient data,False,False,False,False,False,False,False,,https://githubmemory.com/@nextcloud-pr-bot
+['nodebb-misty'],Private,False,True,False,"Continuous Intergration Enhancement translation and backport commits",True,False,True,True,True,False,False,,https://githubmemory.com/index.php/@nodebb-misty
+['nodejs-github-bot'],Private,False,True,False,"Continuous Intergration Enhancement documentation and dependencies updates creating branches",True,False,False,True,True,False,False,,https://githubmemory.com/index.php/@nodejs-github-bot
+['npm-robot'],Private,False,True,False,"format release, push commits, closing issues generic CI bot",True,False,False,False,True,True,False,,https://githubmemory.com/@npm-robot
+['oni-bot'],Private,False,True,False,"push commits, create/delete branches",True,False,False,False,False,False,False,,https://githubmemory.com/@oni-bot
+['openssl-machine'],Private,False,True,False,"Continuous Intergration Enhancement, generic repo bot confirm test passes of PR, reminding inactive PR, CLA",True,False,True,False,False,True,False,,https://githubmemory.com/index.php/@openssl-machine
+['pdfjsbot'],Private,False,True,False,"Continuous Intergration Enhancement Create tests for various deployments",True,False,False,False,False,False,False,,https://github.com/pdfjsbot
+"['pivotal-issuemaster', 'pivotal-cla']",Private,False,True,False,"Issue & PR Management Contributor Lisence Agreement",False,False,True,False,False,True,False,,https://github.com/pivotal-issuemaster
+['pr-benchmarks'],Private,True,False,False,Issue & PR Management; summary PR,False,True,False,False,False,True,False,,
+['pralor-bot'],Private,False,True,False,"suggesting relevant PR/Issue or documentation",False,False,False,False,True,True,False,,https://githubmemory.com/index.php/@pralor-bot
+"['project-home-assistant', 'homeassistant']",Private,False,True,False,Generic ci bot,True,False,False,False,False,False,False,,https://github.com/home-assistant/core
+['prombot'],Private,False,True,False,"sync mirrors by pull request creating branches for various versions",True,False,False,False,False,True,True,,"https://github.com/prombot https://github.com/vche/prombot"
+['pull-bot'],Private,False,True,False,Static analysis the PR and creating warning and other messages,False,True,False,False,False,False,False,Danger,https://githubmemory.com/@pull-bot
+['rc-publisher'],Private,False,True,False,Comment under the issue and PR after a stable release for reference,False,False,False,False,True,True,False,,https://githubmemory.com/@rc-publisher
+['robot-clickhouse'],Private,True,False,False,"auto backport pull-request, auto push, auto create and delete branches while merging. (generic bot)",True,False,False,True,False,False,False,,https://githubmemory.com/@robot-clickhouse
+['runfoapp'],Private,False,True,False,Static analysis the PR,False,True,False,False,False,False,False,,https://runfo.azurewebsites.net/
+"['rust-timer', 'rustbot']",Private,False,True,False,Run performance timer on PR and compare performance.,False,True,False,False,False,False,False,,https://githubmemory.com/@rust-timer https://githubmemory.com/@rustbot
+['sailsbot'],Private,False,True,False,"PR guideline check Contributor Licence Agreement",False,False,True,False,False,True,False,,https://githubmemory.com/@sailsbot
+['semantic-release-bot'],Private,False,True,False,"determining the next version number, tag branches, generating the release notes, and publishing the package (release help)",True,False,False,False,True,False,False,,https://github.com/semantic-release-bot
+"['shields-ci', 'shields-deployment', 'shields-cd']",Private,False,True,False,"Continuous Intergration Enhancement Deployment",True,False,False,False,False,False,False,,https://githubmemory.com/@shields-ci
+['sizebot'],Private,False,True,False,comment the size of the PR,False,True,False,False,False,False,False,,https://githubmemory.com/@sizebot
+['SpacemacsBot'],Private,False,True,False,push documentation updates commit,True,False,False,False,True,False,False,,https://githubmemory.com/@SpacemacsBot
+"['spring-buildmaster', 'spring-builds']",Private,False,True,False,"publish release, push code, tag branches",True,False,False,False,True,False,False,,https://githubmemory.com/@spring-builds
+['spring-project-issue'],Private,False,True,False,create and label issues,False,False,False,False,False,True,False,,https://github.com/spring-projects-issues
+['sre-bot'],Private,False,True,False,check PR format,False,False,False,False,False,True,False,,https://github.com/sre-bot
+['st-review'],Private,False,True,False,close idle PR,False,False,False,False,False,True,False,,https://githubmemory.com/@st-review
+['strapi-cla'],Private,False,True,False,Contributor Lisence Agreement,False,False,True,False,False,False,False,,https://github.com/strapi-cla
+['swagger-bot'],Private,False,True,False,"push commits, approve tested PR",True,False,False,False,False,False,False,,https://githubmemory.com/@swagger-bot
+['swift-ci'],Private,False,True,False,build and test,True,False,False,False,False,False,False,,https://github.com/apple/swift/blob/main/docs/ContinuousIntegration.md
+['SwiftLintBot'],Private,False,True,False,warning and message of the pr,False,True,False,True,False,False,False,Danger,https://githubmemory.com/@SwiftLintBot
+['taichi-gardener'],Private,False,True,False,"auto format, push commits",True,True,False,False,False,False,False,,https://github.com/taichi-gardener
+"['tensorflow-butler', 'tensorflow-jenkins', 'tensorflowbutler']",Private,False,True,False,"label/unlabel issues push commits build and test",True,False,False,False,False,True,False,,https://github.com/tensorflowbutler
+['ti-chi-bot'],Private,False,True,False,"Run test on PR, label/unlabel issues and PR, auto merge passed PR, welcome contributors",True,True,True,False,False,True,False,,https://githubmemory.com/@ti-chi-bot
+['ti-srebot'],Private,False,True,False,"auto create PR, community managing, run test",True,False,True,False,False,True,False,,https://github.com/ti-srebot
+['tqdm-bot'],Private,False,True,False,"Push commits, create/delete branch tags, publish release",True,False,False,False,True,True,False,,https://githubmemory.com/@tqdm-bot
+['traefiker'],Private,False,True,False,"push commits, create issues, publish release",True,False,False,False,True,True,False,,https://githubmemory.com/@traefiker
+['typescript-bot'],Private,False,True,False,"ask filling issue template, generating bug report format",False,False,False,False,True,True,False,,"https://github.com/typescript-bot https://githubmemory.com/@typescript-bot"
+['VaporBot'],Private,False,True,False,"publish release, create branch tag, reference issue/PR to the release",True,False,False,False,True,True,False,,https://githubmemory.com/@VaporBot
+['video-archivist-bot'],Private,False,True,False,Archive issue related video and documentation,False,False,False,False,True,True,False,,https://githubmemory.com/@video-archivist-bot
+"['vscodebot', 'vscode-triage-bot']",Private,True,True,False,Triage issue and pullrequest,False,True,False,False,False,True,False,,https://github.com/apps/vscodebot
+['vue-bot'],Private,False,True,False,Comment on new issues to guide users to use format,False,False,False,False,False,True,False,,https://githubmemory.com/@vue-bot
+['weblate'],Private,False,True,False,['push changes'],True,False,False,False,False,False,True,,https://github.com/weblate
+['webpack-bot'],Private,False,True,False,"general CI tasks close inactive issues",True,False,False,False,False,True,False,Open-bot,https://github.com/webpack-bot
+['webtorrent-bot'],Private,False,True,False,"publish release, create branch tag, reference issue/PR to the release",True,False,False,False,True,True,False,,https://githubmemory.com/@webtorrent-bot
+['yahoocla'],Private,False,True,False,Contributor lisence Agreement,False,False,True,False,False,False,False,,https://githubmemory.com/@yahoocla
+['repokitteh'],Private,False,True,False,"PR body format checker, Retry failed tests on command, Assign command to assign users to issues; Mark new activity on an issue/PR with a label; Custom PR approval policy - require multiple approvals; mark a PR as ready-to-merge on command, and another mechanism to merge all these at a given point in time",True,True,True,False,False,True,False,,https://www.repokitteh.io/#features
